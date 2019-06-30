@@ -1,4 +1,4 @@
-var READY_MESSAGE_DURATION_SHORT = 50;
+var READY_MESSAGE_DURATION_SHORT = 30;
 var READY_MESSAGE_DURATION_LONG = 45; //180 for kalinka, 45 for tetris
 
 function ReadyMessage() {}

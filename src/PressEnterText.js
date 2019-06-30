@@ -10,7 +10,7 @@ PressEnterText.prototype.draw = function (ctx) {
   if (!this._blinkTimer.isVisible()) {
     return;
   }
-  
+
   ctx.fillStyle = "red";
   ctx.font = "bold 18px 'Lucida Console', Monaco, monospace"
   var text = "PRESS ENTER";

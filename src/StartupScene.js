@@ -1,7 +1,7 @@
 function StartupScene(game) {
   this._game = game;
   this._pressEnterText = new PressEnterText();
-  
+
   this._pacman = new Pacman(this, game);
   this._pacman.setStrategy(new PacmanStartupSceneStrategy(this._pacman, this));
   this._pacman.setCurrentSpeed(4);
@@ -38,12 +38,12 @@ StartupScene.prototype.getY = function () {
 
 StartupScene.prototype._drawTitle = function (ctx) {
   ctx.fillStyle = "#ffff00";
-  ctx.font = "bold 90px 'Lucida Console', Monaco, monospace"
-  ctx.fillText("PAC-MAN", 76, 150);
+  ctx.font = "bold 69px 'Lucida Console', Monaco, monospace"
+  ctx.fillText("the DEVourer", 30, 150);
 };
 
 StartupScene.prototype._drawControlsHelp = function (ctx) {
   ctx.fillStyle = "#dedede";
   ctx.font = "bold 14px 'Lucida Console', Monaco, monospace"
-  ctx.fillText("CONTROL: ARROW KEYS", 187, 300);
+  ctx.fillText("to attend another meetup", 170, 300);
 };

@@ -8,12 +8,12 @@ var SoundManager = (function() {
     intro: null,
     eatfruit: null
   };
-  
+
   for (var i in sounds) {
-    var snd = new Audio("sounds/" + i + ".ogg");
+    var snd = new Audio("sounds/" + i + ".mp3");
     sounds[i] = snd;
   }
-  
+
   return {
     notify: function (event) {
       if (event.name == EVENT_PELLET_EATEN) {

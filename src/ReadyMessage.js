@@ -1,5 +1,5 @@
 var READY_MESSAGE_DURATION_SHORT = 50;
-var READY_MESSAGE_DURATION_LONG = 100;
+var READY_MESSAGE_DURATION_LONG = 45; //180 for kalinka, 45 for tetris
 
 function ReadyMessage() {}
 
@@ -37,7 +37,7 @@ ReadyMessage.prototype.draw = function (ctx) {
   if (!this.isVisible()) {
     return;
   }
-  
+
   ctx.fillStyle = "#ffff00";
   ctx.font = "bold 18px 'Lucida Console', Monaco, monospace"
   ctx.fillText("READY!", 234, 273);
